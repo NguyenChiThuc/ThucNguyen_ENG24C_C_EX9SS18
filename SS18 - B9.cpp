@@ -43,8 +43,8 @@ int main(){
 		            size++;
 		        for (int i=0;i<size; i++){ 
 	                printf("%d. %s: %.3lf\n",menu[i].id,menu[i].name,menu[i].price);
-	            }        
-	        break;
+	            	}        
+	        	break;
 			case 3:
 			{
 				int newfood;
@@ -57,14 +57,14 @@ int main(){
 			break;
 			}
 			case 4:
-				size--;
-            	for (int i=0;i<size; i++){ 
+			size--;
+            		for (int i=0;i<size; i++){ 
                 	if(menu[i].id==0){
                     	break;
-                }
+                	}
                 	printf("%d. %s: %lf\n",menu[i].id,menu[i].name,menu[i].price);
-            }
-            break;
+            		}
+           		break;
 			case 5:
 				for(int i=0;i<size-1;i++){
 					for(int j=i+1;j<size;j++){
@@ -85,7 +85,7 @@ int main(){
 					if(strcmp(menu[i].name,search)==0){
 						printf("Mon an duoc tim thay: %d,%s,%.2f\n", menu[i].id, menu[i].name, menu[i].price);
 						found=1;
-					break;
+				break;
 				}
 			}
 				if(!found){
@@ -93,9 +93,9 @@ int main(){
 				}
 				break;
 			}
-			default:
-				printf("Lua chon khong hop le\n");
+		default:
+			printf("Lua chon khong hop le\n");
 		}
-	}while(choice!=7);
+		}while(choice!=7);
 	return 0;
 }
